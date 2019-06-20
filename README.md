@@ -23,4 +23,3 @@
   * Clipboard Spoofing
   * Plain Text Website
   * Incognito Browsing
-  * Auto Update
