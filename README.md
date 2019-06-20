@@ -1,5 +1,6 @@
 # labyrinth _Legacy_
 _this version of labyrinth is Depricated and will not be updated!_
+---
 to configure/start, run start.bat in the RAW DIRECTORY
 for maximum effect of Labyrinth make sure that the directory folder does not have spaces eg. "Labyrinth_Browser"
 
