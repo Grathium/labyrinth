@@ -1,1 +1,0 @@
-x = msgbox("Congratulations," & vbCrlf & "Your Browser Is Configured To Use Labyrinth",1+48,"Labyrinth")
