@@ -1,6 +1,5 @@
-# labyrinth
+# labyrinth _Rebuild_
 >to configure/start, run start.bat in the RAW DIRECTORY
->coded in C#
 
 ---
 #### Current Anti Censorship Options:
