@@ -9,6 +9,7 @@
   * meek - Afilias
   * meek - Toolur
   * Goodbye DPI
+  * Directory Bridges
   * PPTP proxy support
   * No Logging DNS
   * FTE
@@ -21,3 +22,4 @@
   * Clipboard Spoofing
   * Plain Text Website
   * Incognito Browsing
+  * Auto Updater
