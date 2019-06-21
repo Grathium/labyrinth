@@ -1,5 +1,6 @@
 # labyrinth _Rebuild_
 >to configure/start, run start.bat in the RAW DIRECTORY
+>can now access .lab websites
 
 ---
 #### Current Anti Censorship Options:
