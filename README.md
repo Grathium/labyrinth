@@ -8,11 +8,9 @@
   * meek - DuckDuckGo
   * meek - Afilias
   * meek - Toolur
-  * Bypass Port Filtering
   * Goodbye DPI
   * PPTP proxy support
   * No Logging DNS
-  * MFS Bridges
   * FTE
   
 #### Current Security Features:
