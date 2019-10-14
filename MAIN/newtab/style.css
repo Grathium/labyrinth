@@ -1,5 +1,12 @@
 html {
   background-color: rgba(215, 215, 219, 0.6);
+  background-image: url("wp2232686.jpg") !important;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #searchbar {
