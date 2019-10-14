@@ -1,5 +1,5 @@
 # labyrinth _Rebuild_
->to configure/start, run start.bat in the RAW DIRECTORY  
+>configuration is now built in!
 >can now access .lab websites
 
 ---
