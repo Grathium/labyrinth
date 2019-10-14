@@ -1,5 +1,5 @@
 # labyrinth _Rebuild_
->configuration is now built in!
+>configuration is now built in!  
 >can now access .lab websites
 
 ---
