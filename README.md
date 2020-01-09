@@ -1,4 +1,4 @@
-# labyrinth _Rebuild_
+# labyrinth __Rebuild__
 >can now access .lab websites
 
 ---
