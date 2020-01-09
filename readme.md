@@ -1,4 +1,4 @@
-# ___**Labyrinth__Stratus__**___  
+# **Labyrinth ___Stratus___**  
 ### by: **__Grathium Industries__**
 ---
 
