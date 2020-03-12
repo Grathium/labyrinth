@@ -1,7 +1,5 @@
-// Toolbar
-export const TOOLBAR_HEIGHT = 38;
-export const TOOLBAR_BUTTON_WIDTH = 36;
+export const EASING_FUNCTION = 'cubic-bezier(0.4, 0, 0.2, 1)';
 
-// Widths
-export const WINDOWS_BUTTON_WIDTH = 45;
-export const MENU_WIDTH = 330;
+export const DIALOG_EASING = 'cubic-bezier(0.1, 0.9, 0.2, 1)';
+
+export const ERROR_COLOR = '#b00020';

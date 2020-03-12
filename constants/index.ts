@@ -1,3 +1,7 @@
-export * from './settings';
-
-export const EXTENSIONS_PROTOCOL = 'chrome-extension';
+export * from './fonts';
+export * from './transparency';
+export * from './dictionary';
+export * from './icons';
+export * from './themes';
+export * from './design';
+export * from './colors';
