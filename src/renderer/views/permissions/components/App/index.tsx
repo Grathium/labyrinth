@@ -1,0 +1,84 @@
+import * as React from 'react';
+import { observer } from 'mobx-react-lite';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { hot } from 'react-hot-loader/root';
+
+import { Style } from '../../style';
+import { ipcRenderer } from 'electron';
+import { StyledApp, Title, Permissions, Permission, Buttons } from './style';
+import store from '../../store';
+import { Button } from '~/renderer/components/Button';
+
+const GlobalStyle = createGlobalStyle`${Style}`;
+
+const sendResult = (r: boolean) => {
+  ipcRenderer.send(`request-permission-result-${store.windowId}`, r);
+};
+
+const getText = (permission: string) => {
+  if (permission === 'notifications') {
+    return 'Show notifications';
+  }
+
+  if (permission === 'microphone') {
+    return 'Access your microphone';
+  }
+
+  if (permission === 'camera') {
+    return 'Access your camera';
+  }
+
+  if (permission === 'geolocation') {
+    return 'Know your location';
+  }
+
+  return '';
+};
+
+export const App = hot(
+  observer(() => {
+    return (
+      <ThemeProvider theme={{ ...store.theme }}>
+        <StyledApp>
+          <GlobalStyle />
+          <Title>{store.domain} wants to:</Title>
+          <Permissions>
+            {store.permissions.map(item => (
+              <Permission key={item}>{getText(item)}</Permission>
+            ))}
+          </Permissions>
+          <Buttons>
+            <Button
+              background={
+                store.theme['dialog.lightForeground']
+                  ? 'rgba(255, 255, 255, 0.08)'
+                  : 'rgba(0, 0, 0, 0.08)'
+              }
+              foreground={
+                store.theme['dialog.lightForeground'] ? 'white' : 'black'
+              }
+              onClick={() => sendResult(true)}
+            >
+              Allow
+            </Button>
+            <Button
+              background={
+                store.theme['dialog.lightForeground']
+                  ? 'rgba(255, 255, 255, 0.08)'
+                  : 'rgba(0, 0, 0, 0.08)'
+              }
+              foreground={
+                store.theme['dialog.lightForeground'] ? 'white' : 'black'
+              }
+              style={{ marginLeft: 8 }}
+              onClick={() => sendResult(false)}
+            >
+              Deny
+            </Button>
+          </Buttons>
+          <div style={{ clear: 'both' }}></div>
+        </StyledApp>
+      </ThemeProvider>
+    );
+  }),
+);
