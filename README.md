@@ -1,13 +1,5 @@
 # **Labyrinth ___Stratus___**
 ---
 
-#### Created With
-* ElectronJS
-* ReactJS
-* Wexond
-* Chromium
-
-#### To use
-> run 'npm install'  
-> to build 'npm run-script build'  
-> to start 'npm start'  
+### Currently Devloping K-19 Rendering Web Engine  
+> Built from the base up to defer conflicts. The K-19 Web Engine will be a light & robust redering engine
